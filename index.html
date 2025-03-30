@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RishiPrasad P Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <div class="profile-image">
+                    <!-- Replace with your actual profile image -->
+                    <img src="Screenshot 2024-10-09 at 9.34.22 PM.png" alt="RishiPrasad P">
+                </div>
+                <div class="profile-info">
+                    <h1>RISHIPRASAD</h1>
+                    <p>Front-end Developer | UI/UX Designer | Tech Enthusiast | RedHat Linux System Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate developer with expertise in creating beautiful and functional websites. 
+               With a strong foundation in front-end, I love turning complex problems 
+               into simple, beautiful, and intuitive solutions. I'm also know to create IOS app.
+               Dive in AI like Cursor-Ai. </p>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-card">
+                <h2>UnderGraduate</h2>
+                <h3>B.Tech Information Technology</h3>
+                <p>2023 - 2027</p>
+                <p>Sri SaiRam Institute of  Technology, Chennai</p>
+            </div>
+            
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>Web Technologies</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-apple"></i>
+                    <h3>Mobile Development</h3>
+                    <p>iOS App Development, Swift, React Native</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MongoDB, MySQL, Firebase</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, Docker, Linux, VS Code</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Other Skills</h3>
+                    <p>UI/UX Design, System Administration, AI/ML Basics</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="project-card">
+                <img src="expense.png" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h3>IOS-Expense Tracker</h3>
+                    <p>A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, 
+                       payment integration, and admin dashboard.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/RishiPrasadP/IOS-EXPENSE-TRACKER.git"><i class="fab fa-github"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="justice.png" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h3>Judiciary APP</h3>
+                    <p>My project is a judiciary app that provides users with easy access to legal information, case updates, and judicial services. It simplifies interaction with the legal system through a user-friendly interface.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/RishiPrasadP/IOS-JUDICIARY-APP.git"><i class="fab fa-github"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>I'm currently available for freelance work and full-time opportunities.</p>
+            <div class="contact-links">
+                <a href="mailto:rishiprasad1802@gmail.com?subject=Portfolio%20Contact&body=Hello%20RishiPrasad,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding...">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/rishiprasad-prakash" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/RishiPrasadP" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="tel:+918248123572">
+                    <i class="fas fa-phone"></i> Contact
+                </a>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Scroll reveal animation
+        function reveal() {
+            var reveals = document.querySelectorAll('.about-me, .project-card, .contact');
+            
+            reveals.forEach(element => {
+                var windowHeight = window.innerHeight;
+                var elementTop = element.getBoundingClientRect().top;
+                var elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('reveal');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        // Trigger on initial load
+        reveal();
+    </script>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#your-element-selector",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x20dcd,
+      backgroundColor: 0x0,
+      points: 13.00
+    })
+    </script>
+</body>
+</html>
